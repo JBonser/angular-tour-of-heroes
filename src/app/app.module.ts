@@ -1,8 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import { FormsModule } from '@angular/forms';
+
+// Application Componenets
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
+
 
 @NgModule({
   declarations: [
@@ -11,8 +14,7 @@ import { HeroesComponent } from './heroes/heroes.component';
   ],
   imports: [
     BrowserModule,
-    MatButtonModule,
-    MatCheckboxModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
